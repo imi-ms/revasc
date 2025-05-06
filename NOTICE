@@ -1,0 +1,24 @@
+Copyright (c) 2025 Antonius Büscher and Lucas Plagwitz
+
+Attribution:
+If you use this project (or its models) in your research or product,
+we kindly request you acknowledge the authors by referencing the
+following article:
+
+@article{10.1093/eurheartj/ehaf254,
+    author = {Büscher, Antonius and Plagwitz, Lucas and Yildirim, Kemal and Brix, Tobias J and Neuhaus, Philipp and Bickmann, Lucas and Menke, Amélie F and van Almsick, Vincent F and Pavenstädt, Hermann and Kümpers, Philipp and Heider, Dominik and Varghese, Julian and Eckardt, Lars},
+    title = {Deep Learning Electrocardiogram Model for Risk Stratification of Coronary Revascularization Need in the Emergency Department},
+    journal = {European Heart Journal},
+    pages = {ehaf254},
+    year = {2025},
+    month = {03},
+    issn = {0195-668X},
+    doi = {10.1093/eurheartj/ehaf254},
+    url = {https://doi.org/10.1093/eurheartj/ehaf254},
+    eprint = {https://academic.oup.com/eurheartj/advance-article-pdf/doi/10.1093/eurheartj/ehaf254/62788722/ehaf254.pdf},
+}
+
+This NOTICE file is included for informational purposes only and does
+not modify the Apache License, Version 2.0. You may not remove or alter
+any copyright, trademark, attribution notices, or license statements
+from this project.
