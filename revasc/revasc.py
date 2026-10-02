@@ -20,7 +20,7 @@ from fastai.metrics import BalancedAccuracy, RocAucBinary
 
 class Revasc(BaseEstimator, ClassifierMixin):
     def __init__(self, random_state=42, epochs=100, cpu=False,
-                 rule_in_threshold=.0271980346, rule_out_threshold=.0043238043):
+                 rule_in_threshold=.05433071, rule_out_threshold=.00671125):
         self.model = None
         self.classes_ = np.array([0, 1])
         self.random_state = random_state
