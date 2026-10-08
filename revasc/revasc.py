@@ -1,21 +1,9 @@
-import pandas as pd
-import os
-import numpy as np
-import torch
-
 import os
 
-from sklearn.model_selection import RepeatedStratifiedKFold, StratifiedKFold, StratifiedGroupKFold, StratifiedShuffleSplit, GroupShuffleSplit
-from tsai.all import *
-from fastai.metrics import RocAucBinary
-
-from sklearn.metrics import balanced_accuracy_score, roc_auc_score
-import fastai.learner as fastail
-from fastai.callback.tracker import ReduceLROnPlateau, EarlyStoppingCallback
-from fastai.callback.training import GradientAccumulation, ShortEpochCallback
+from fastai.learner import load_learner
+from tsai.inference import get_X_preds
 import numpy as np
 from sklearn.base import BaseEstimator, ClassifierMixin
-from fastai.metrics import BalancedAccuracy, RocAucBinary
 
 
 class Revasc(BaseEstimator, ClassifierMixin):
@@ -40,7 +28,7 @@ class Revasc(BaseEstimator, ClassifierMixin):
         return np.mean(preds, axis=0)
 
     def predict_risk(self, X, bs=64):
-        prob = self.predict_proba(X, bs=64)
+        prob = self.predict_proba(X, bs=bs)
         risk = []
         for i in range(len(X)):
             if prob[i, 1] >= self.rule_in_threshold:
