@@ -1,9 +1,9 @@
 # REVASC: ECG Model for Risk Stratification of Coronary Revascularization Need in the Emergency Department
 
 
-This repository accompanies the article **Deep Learning Electrocardiogram Model for Risk Stratification of 
-Coronary Revascularization Need in the Emergency Department**. 
-It provides code to reproduce the model training described in the paper, 
+This repository accompanies the article **Deep Learning Electrocardiogram Model for Risk Stratification of
+Coronary Revascularization Need in the Emergency Department**.
+It provides code to reproduce the model training described in the paper,
 as well as to utilize the trained model weights for prediction and fine-tuning.
 
 <img src='./ga.png' width=100%/>
@@ -30,7 +30,7 @@ Install the required dependencies using:
 pip install -r requirements.txt
 ```
 
-All necessary model weights are included in the repository. 
+All necessary model weights are included in the repository.
 You can load and use the pretrained models with just a few lines of code:
 
 ```python
@@ -48,12 +48,23 @@ A complete working example is available in the notebook *notebooks/demo_predicti
 
 ### Legal disclaimer
 
-This software tool is intended solely for research and informational purposes. 
-It is NOT a medical device and has NOT been approved or certified by any regulatory agency. 
-The tool must NOT be used for clinical decision-making or patient management. 
-Users are solely responsible for compliance with applicable laws and regulations. 
-The authors and contributors accept no responsibility or liability for any damages or 
+This software tool is intended solely for research and informational purposes.
+It is NOT a medical device and has NOT been approved or certified by any regulatory agency.
+The tool must NOT be used for clinical decision-making or patient management.
+Users are solely responsible for compliance with applicable laws and regulations.
+The authors and contributors accept no responsibility or liability for any damages or
 consequences arising from the use of this software.
+
+### Versions
+
+**v1.0.0**
+Original model accompanying the European Heart Journal publication.
+
+**v1.1.0**
+Updated REVASC release including:
+- Revised procedure codes to define the revascularization endpoint
+- updated ensemble weights
+- newly derived decision thresholds
 
 ### Reference
 
